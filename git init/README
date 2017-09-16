@@ -1,0 +1,11 @@
+function PubSub() {
+3		var listeners = {};
+4		function	addListener(name, callback) {
+5			if (!listeners[name])
+…	
+24		function	clearListeners(name) {
+25			if (listeners[name])
+26				delete listeners[name];
+27		}
+28		
+29		this.on = addListener;
